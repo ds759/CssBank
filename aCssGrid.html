@@ -1,0 +1,136 @@
+<!-- https://codepen.io/markcaron/pen/MvGRYV -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid</title>
+		<style>
+			.wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				/*grid-column-gap : 1em;*/
+				grid-auto-rows: minmax(30px, auto)
+			}
+			.wrapper > div { 
+				background: #eee;
+				/*padding 1em;*/
+			}
+			.wrapper > div:nth-child(odd){
+				background: #ddd;
+				/*padding: 1em;*/
+			}
+
+			.nested {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 1em;
+				padding: 1em;
+			}
+			.nested > div {
+				border: #333 1px solid;
+			}
+			.box {
+				grid-column: 2/4;
+				grid-row:3;
+			}
+			/* Style the tab */
+			.tab {
+			  overflow: hidden;
+			  border: 1px solid #ccc;
+			  background-color: #f1f1f1;
+			}
+
+			/* Style the buttons that are used to open the tab content */
+			.tab button {
+			  background-color: inherit;
+			  float: left;
+			  border: none;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 16px;
+			  transition: 0.3s;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+			  background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+			  background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			  display: none;
+			  padding: 6px 12px;
+			  border: 1px solid #ccc;
+			  border-top: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="tab">
+			 	<button class="tablinks">London</button>
+			 	<button class="tablinks">Paris</button>
+			 	<button class="tablinks">Tokyo</button>
+			</div>
+			<div></div>
+			<div>
+				<p>lots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test data</p>
+			</div>
+			
+			<div class="nested">
+				<div>Lorem</div>
+				<div>Lorem</div>
+				<div>Lorem</div>
+
+			</div>
+			
+			<div>
+				<p>lots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test data</p>
+			</div>
+			<div>
+				<p>lots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test data</p>
+			</div>
+			<div>
+				<p>lots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test datalots and lots of test data</p>
+			</div>
+			<div class="box">
+				<p>the box the boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe box
+				the boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe box
+			the boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe box
+				the boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe boxthe box</p>
+			</div>
+
+		</div>
+	</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
